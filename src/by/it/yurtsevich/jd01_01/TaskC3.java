@@ -39,7 +39,7 @@ class TaskC3 {
         final Scanner scanner = new Scanner(System.in);
         final int weight = scanner.nextInt();
 
-        System.out.format("%.2f%n", getWeight(weight));
+        System.out.printf("%.2f%n", getWeight(weight));
     }
 
     private static double getWeight(final int weight) {
