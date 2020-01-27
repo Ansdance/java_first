@@ -26,9 +26,25 @@ public class PrimitiveDataTypes {
         char c3 = 499; // отражает 499ый символ в юникоде ǳ - ЗДЕСЬ 10 система счисления
         char c4 = '\u0499'; // ҙ - здесь 16 система счисления
 
+        int bin = 0b1001101; // 2 ставится спереди 0b
+        int oct = 0_115; // 8 ставить 0 спереди,можно помогать себе андерскором, но необязательно
+        int dec = 77; // 10
+        int hex = 0x4D; // 16 система счисления 0х
+
+        int i5 = 1_000_000; // символ андерскор(нижнее подчеркивание) помогает разделять цифры для удобства
+
+        // Андерскор !нельзя использовать в начале или в конце числа, что само по себе нелогично, до/после букв F D L
+
+
         System.out.println(c2);
         System.out.println(d1);
         System.out.println(c3);
         System.out.println(c4);
+
+        System.out.println(bin);
+        System.out.println(oct);
+        System.out.println(dec);
+        System.out.println(hex);
+
     }
 }
