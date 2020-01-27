@@ -1,4 +1,4 @@
-package by.it.yurtsevich.videoCourse.homework1;
+package by.it.yurtsevich.videoCourse.homework;
 
 public class Homework1 {
     public static void main(String[] args) {
