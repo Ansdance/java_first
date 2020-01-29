@@ -1,7 +1,21 @@
-package by.it.yurtsevich.videoCourse.lesson4;
+package by.it.yurtsevich.videoCourse.homework.homework5;
 
 public class BankAccount {
+    double balance1;
 
+    double popoplnenieScheta(double dengi) {
+        balance1 += dengi;
+        return balance;
+    }
+
+    double snyatieSoScheta(double dengi) {
+        balance1 -= dengi;
+        return balance;
+    }
+
+    void showinfo() {
+        System.out.println(balance1);
+    }
 
     int id;
     String name;
@@ -13,6 +27,8 @@ public class BankAccount {
         MyAccount.id = 1;
         MyAccount.name = "Kostya";
         MyAccount.balance = 25.5;
+        MyAccount.snyatieSoScheta(10);
+
 
         BankAccount HisAccount = new BankAccount();
         HisAccount.id = 2;
