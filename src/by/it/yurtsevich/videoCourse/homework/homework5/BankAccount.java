@@ -28,6 +28,8 @@ public class BankAccount {
         MyAccount.name = "Kostya";
         MyAccount.balance = 25.5;
         MyAccount.snyatieSoScheta(10);
+        MyAccount.popoplnenieScheta(14500);
+        MyAccount.showinfo();
 
 
         BankAccount HisAccount = new BankAccount();
