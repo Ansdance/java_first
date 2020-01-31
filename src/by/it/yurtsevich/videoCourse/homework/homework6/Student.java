@@ -1,6 +1,5 @@
 package by.it.yurtsevich.videoCourse.homework.homework6;
 
-import java.sql.SQLOutput;
 
 public class Student {
     Student(int number1, String name1, String lastname1, double year1, double math1, double economic1, double language1) {
