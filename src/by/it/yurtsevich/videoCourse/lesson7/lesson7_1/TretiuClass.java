@@ -1,10 +1,11 @@
-package by.it.yurtsevich.videoCourse.lesson7;
+package by.it.yurtsevich.videoCourse.lesson7.lesson7_1;
 
-public class DrygouClass {
+import by.it.yurtsevich.videoCourse.lesson7.Employee;
+
+public class TretiuClass {
     public static void main(String[] args) {
         Employee emp = new Employee(500);
         System.out.println(emp.salary);
         emp.dvounayaZP();
-
     }
 }
