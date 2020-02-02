@@ -1,32 +1,21 @@
 package by.it.yurtsevich.videoCourse.homework.homework8;
 
 public class Class1 {
-    public static double triChisla() {
-        double d1 = 3.33;
-        double d2 = 3213.33;
-        double d3 = 343.33;
-        double result = d1 * d2 * d3;
-        return result;
+    public static double triChisla(double a, double b, double c) {
+        return a * b * c;
     }
 
-    public static void dvaChisla() {
-        double d4 = 213.32;
-        double d5 = 113.32;
-        double result1 = d4 / d5;
+    public static void dvaChisla(int a, int b) {
+        System.out.println("Целое частное = " + a / b + " Остаток от деления = " + a % b);
     }
 
-    final static double p = 3.14;
-
-    public double ploshad() {
-        double radius = 34.2;
-        double ploshad1 = p * radius * radius;
-        return ploshad1;
+    public static class Class1Test {
+        public static void main(String[] args) {
+            System.out.println(triChisla(12, 45, 34));
+            System.out.println(triChisla(23, 34, 55));
+            dvaChisla(3, 3);
+            dvaChisla(45, 343);
+        }
     }
-    public static double dlinaOkr(){
-        double radius =56.3;
-        double ploshad2=2* p*radius;
-        return ploshad2;
-    }
-
 }
 
