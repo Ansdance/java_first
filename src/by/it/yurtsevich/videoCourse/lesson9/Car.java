@@ -5,7 +5,7 @@ public class Car {
     String engine;
     static int count;
 
-    Car(String color, String engine) {
+    public Car(String color, String engine) {
         count++;
         // Имеем ввиду цвет и двигатель,которые принадлежат обьекту, чтобы не утруждать себя и менять названия перед
         // color i engine pishem THIS

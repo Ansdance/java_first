@@ -4,7 +4,7 @@ package by.it.yurtsevich.videoCourse.lesson8;
 public class Student {
     // Создал переменную статик инт каунт - она принадлежит всему классу и является общей для всех созданных обьектов
     String name;
-    int course;
+    public int course;
     static int count;
 
     public Student(String name2, int course2) {

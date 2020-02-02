@@ -10,8 +10,8 @@ public class Task1 {
         Task1 t5 = new Task1();
         Task1 t6 = new Task1();
         Task1 t7 = new Task1();
-        t=null;
-        t=t1=t2=t3=t4=t5=t6=null;
+        t = null;
+        t = t1 = t2 = t3 = t4 = t5 = t6 = null;
         //в живых осталось два обьекта т6 и т7
     }
 }
