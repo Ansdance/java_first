@@ -29,6 +29,6 @@ class CarTest {
         Car c2 = new Car("black", "V12", 3);
         ct.menyaemCveta(c1, c2);
         ct.menyaemKolvoDverey(c1,12);
-        
+
     }
 }
