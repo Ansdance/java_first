@@ -1,7 +1,7 @@
 package by.it.yurtsevich.videoCourse.lesson11;
 
 public class Employee {
-    public String name;
+    public static String name;
     public double salary;
 
     Employee(String name, double salary) {
