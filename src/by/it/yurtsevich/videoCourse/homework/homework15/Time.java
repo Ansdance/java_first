@@ -3,16 +3,14 @@ package by.it.yurtsevich.videoCourse.homework.homework15;
 public class Time {
     public static void vremya() {
         int chas = 0;
-
         OUTER:
         while (chas < 6) {
             int minuta = -1;
             MIDDLE:
             do {
                 minuta++;
-                if (chas > 1 && minuta % 10 == 0)
-                {
-                    break;
+                if (chas > 1 && minuta % 10 == 0) {
+                    break OUTER;
                 }
                 int sekunda = 0;
                 INNER:
