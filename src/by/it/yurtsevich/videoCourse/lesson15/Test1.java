@@ -1,0 +1,12 @@
+package by.it.yurtsevich.videoCourse.lesson15;
+
+public class Test1 {
+    public static void main(String[] args) {
+        int money = 100;
+        while (money > 0) {
+            System.out.println("Делайте ставку");
+            System.out.println("Вы проиграли");
+            money = money - 10;
+        }
+    }
+}
