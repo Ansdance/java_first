@@ -1,9 +1,7 @@
 package by.it.yurtsevich.videoCourse.lesson16;
 
 public class Test4 {
-    public static void main(String[] args) {
 
-    }
 }
 
 class Employee {

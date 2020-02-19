@@ -15,7 +15,7 @@ public class Test1 {
         System.out.println(s1.indexOf("vet"));
         String s2 = "sadasdadwacf";
         // Ищет символ а с 5го символа
-        System.out.println(s2.indexOf("a",5));
+        System.out.println(s2.indexOf("a", 5));
         // Возвращает булианское значение (тру  ли фолс) в зависимости с чего начинется
         System.out.println(s2.startsWith("sa"));
         // Возвращает булианское значение (тру  ли фолс) в зависимости на что заканчивается
