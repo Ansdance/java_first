@@ -1,17 +1,35 @@
 package by.it.yurtsevich.videoCourse.homework.homework19;
 
 public class Test1 {
-    public static void abc (String [] ... s){
-        String abc = null;
-        String [] array = new String[]{"hello world"};
-        for (String s1: array){
-            abc+=s;
-            System.out.println(abc + array);
+    public static String[] abc(String[]... array1) {
+        int length = 0;
+        for (String[] array2 : array1) {
+            length += array2.length;
         }
-
+        String[] target = new String[length];
+        int count = 0;
+        for (String[] array2 : array1) {
+            for (String s : array2) {
+                target[count] = s;
+                count++;
+            }
+        }
+        return target;
     }
 
     public static void main(String[] args) {
-        abc( null);
+        String[] target = abc(new String[]{"ok", "okok"}, new String[]{"bye", "poka"});
+        for (String s : args) {
+            for (int i = 0; i < target.length; i++) {
+                if (s.equals(target[i])) {
+                    target[i] = null;
+                }
+            }
+        }
+        for (String s : target) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
+
     }
 }
