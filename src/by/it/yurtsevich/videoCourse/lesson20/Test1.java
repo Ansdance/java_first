@@ -1,17 +1,26 @@
 package by.it.yurtsevich.videoCourse.lesson20;
 
-public class Test1 {
-    // Этот метод позволяет вызвать любое количество параметров любого типа данных !!!!инт(стринг  и тд.) ... а
-    static void summa(String s, int... a) {
-        int summa = 0;
-        for (int i = 0; i < a.length; i++) {
-            summa += a[i];
-        }
-        System.out.println(summa + " " + s);
-    }
+import java.util.ArrayList;
 
+public class Test1 {
     public static void main(String[] args) {
-        summa("OKEY", 4, 4, 4);
+        ArrayList<String> list1 = new ArrayList<>();
+        // Просто добавил
+        list1.add("poka");
+        list1.add("hello");
+        list1.add("ok");
+        // Добавил с первого индекса
+        list1.add(1,"PRIVET");
+        for (String s : list1) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
+        // Гет метод возвращает элемент вызываемый по его индексу
+        System.out.println(list1.get(3));
+        // Сет заменяет на указанный иденкс указанное значение
+        list1.set(2,"!!!");
+        for (String s:list1){
+            System.out.print(s+ " ");
+        }
     }
 }
-

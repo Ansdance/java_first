@@ -18,7 +18,7 @@ public class Test1 {
     }
 
     public static void main(String[] args) {
-        String[] target = abc(new String[]{"ok", "okok"}, new String[]{"bye", "poka"});
+        String[] target = abc(new String[]{"ok", "okok", "hello"}, new String[]{"sdsd", "bye", "poka"});
         for (String s : args) {
             for (int i = 0; i < target.length; i++) {
                 if (s.equals(target[i])) {
