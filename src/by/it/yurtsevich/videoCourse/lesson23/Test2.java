@@ -1,10 +1,11 @@
 package by.it.yurtsevich.videoCourse.lesson23;
 
 public class Test2 {
-    void abc(Animal a){
+    void abc(Animal a) {
         System.out.println("A");
     }
-    void abc(Mouse m){
+
+    void abc(Mouse m) {
         System.out.println("M");
     }
 
