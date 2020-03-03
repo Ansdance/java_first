@@ -5,41 +5,48 @@ public class Test1 {
         Employee emp1 = new Teacher();
         Employee emp2 = new Driver();
         Employee emp3 = new Doctor();
-        emp1.work();
-        emp2.work();
-        emp3.work();
+        // Делаем кастинг доктора, в круглых скобках я указал тип данных на который я хотел закастить переменную emp3
+        Doctor d1 = (Doctor) emp3;
+        System.out.println(d1.specializaciya);
+        System.out.println(((Teacher) emp1).kolvoUchenikov);
+
     }
 }
 
-abstract class Employee{
-    void sleep(){
-        System.out.println("Employee sleeps");
-    }
-    abstract void work();
-}
-class Teacher extends Employee implements HelpAble{
-    @Override
-    void work() {
-        System.out.println("Teacher works");
+class Employee {
+    String name;
+    int age;
+    int experience;
+
+    void eat() {
+        System.out.println("Kushat");
     }
 
-    @Override
-    public void help() {
-        
+    void sleep() {
+        System.out.println("Spat");
     }
 }
-class Driver extends Employee{
-    @Override
-    void work() {
-        System.out.println("Driver works");
+
+class Doctor extends Employee {
+    String specializaciya = "xiryrg";
+
+    void lechit() {
+        System.out.println("Lechit");
     }
 }
-class Doctor extends Employee{
-    @Override
-    void work() {
-        System.out.println("Doctor works");
+
+class Teacher extends Employee {
+    int kolvoUchenikov = 22;
+
+    void uchit() {
+        System.out.println("Uchit");
     }
 }
-interface HelpAble{
-    void help();
+
+class Driver extends Employee {
+    String nazvanieMashini;
+
+    void eat() {
+        System.out.println("Kushat");
     }
+}
